@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const BASE =  "http://localhost:8080"; // empty -> use proxy or same origin
+// const BASE =  "http://localhost:8080"; // empty -> use proxy or same origin
 const api = axios.create({
-  baseURL: BASE,
+  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:8080",
   headers: {
     "Content-Type": "application/json",
   },

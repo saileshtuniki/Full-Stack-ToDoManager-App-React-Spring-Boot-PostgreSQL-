@@ -34,5 +34,10 @@ backend/.env*
 *.tmp
 
 
+#frontend
+frontend-todo-app/.gitignore
+
+
+
 # 🔒 Local DB credentials (never commit)
 application-local.properties
