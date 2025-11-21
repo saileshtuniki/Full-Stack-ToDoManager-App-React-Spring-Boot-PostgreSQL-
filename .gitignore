@@ -1,0 +1,38 @@
+# -------------------------
+# Root-level safety ignores
+# -------------------------
+
+# IDEs
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Frontend build & dependencies (extra safety)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Backend build & caches
+backend/target/
+backend/build/
+backend/*.jar
+backend/*.war
+
+# Env files (never commit local secrets)
+*.env
+*.env.*
+frontend/.env*
+backend/.env*
+
+# Misc
+*.tmp
+
+
+# 🔒 Local DB credentials (never commit)
+application-local.properties
